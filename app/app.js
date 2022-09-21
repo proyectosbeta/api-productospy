@@ -1,13 +1,26 @@
 import express from 'express';
+import createLocaleMiddleware from 'express-locale';
 import helmet from 'helmet';
 import cors from 'cors';
 import geoip from 'geoip-lite';
 import router from '../app/routes/index.js';
+import startPolyglot from '../app/middleware/startPolyglot.middleware.js';
 import Log from '../app/models/log.model.js';
 
 const app = express();
 
 app.use(express.json());
+
+// Translation. English default language.
+app.use(
+    createLocaleMiddleware({
+        priority: ['accept-language', 'default'],
+        default: 'en-US',
+    })
+);
+
+// Set the language in the req with the phrases to be used.
+app.use(startPolyglot);
 
 // Security.
 app.use(helmet());

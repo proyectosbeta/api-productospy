@@ -6,5 +6,6 @@
 * Add sonarqube
 * Add JWT
 * Add translation
+* Add docker
 * Add eslint and prettier
 * Add alias

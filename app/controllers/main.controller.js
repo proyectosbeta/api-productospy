@@ -1,6 +1,6 @@
 const mainController = (req, res) => {
   res.status(200).json({
-    message: "welcome",
+    message: req.polyglot.t('welcome'),
   });
 };
 

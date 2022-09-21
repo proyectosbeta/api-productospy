@@ -2,7 +2,8 @@
 
 ## v1.0.0
 
-- [add] Add core.
-- [add] Add cors and helmet (security).
-- [add] Add babel and webpack.
-- [add] Add log.
+- [feat] Add core.
+- [feat] Add cors and helmet (security).
+- [feat] Add babel and webpack.
+- [feat] Add log.
+- [feat] Add translation (german, english and spanish).
