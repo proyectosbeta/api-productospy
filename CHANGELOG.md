@@ -7,3 +7,4 @@
 - [feat] Add babel and webpack.
 - [feat] Add log.
 - [feat] Add translation (german, english and spanish).
+- [refactor] Refactoring code routes.

@@ -3,7 +3,7 @@ import createLocaleMiddleware from 'express-locale';
 import helmet from 'helmet';
 import cors from 'cors';
 import geoip from 'geoip-lite';
-import router from '../app/routes/index.js';
+import router from '../app/v1/routes/index.js';
 import startPolyglot from '../app/middleware/startPolyglot.middleware.js';
 import Log from '../app/models/log.model.js';
 
