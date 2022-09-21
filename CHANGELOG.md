@@ -11,3 +11,4 @@
 - [feat] Add eslint and prettier.
 - [feat] Add swagger (documentation API).
 - [docs] Update readme file.
+- [feat] Add endpoint user (login, register and allUsers).

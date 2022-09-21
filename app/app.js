@@ -4,7 +4,7 @@ import helmet from 'helmet';
 import cors from 'cors';
 import geoip from 'geoip-lite';
 import swaggerUi from 'swagger-ui-express';
-import { router as v1Router} from '../app/v1/routes/index.js';
+import { router as v1Router } from '../app/v1/routes/index.js';
 import startPolyglot from '../app/middleware/startPolyglot.middleware.js';
 import Log from '../app/models/log.model.js';
 import { swagger as v1SwaggerDocs } from '../app/v1/swagger.js';
@@ -50,5 +50,8 @@ app.use(async (req, res, next) => {
 
 app.use('/api/v1/docs', swaggerUi.serve, swaggerUi.setup(v1SwaggerDocs));
 app.use('/api/v1', v1Router);
+app.use((req, res) =>
+  res.status(404).json({ success: false, message: 'Not Found' })
+);
 
 export default app;
