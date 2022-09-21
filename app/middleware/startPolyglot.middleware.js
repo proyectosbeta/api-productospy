@@ -1,5 +1,5 @@
-import Polyglot from "node-polyglot";
-import { myDe, myEn, myEs } from "../i18n/index.js";
+import Polyglot from 'node-polyglot';
+import { myDe, myEn, myEs } from '../i18n/index.js';
 
 const languages = {
   de: myDe,

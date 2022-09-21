@@ -1,5 +1,5 @@
-import express from "express";
-import mainRouter from "./main.routes.js";
+import express from 'express';
+import mainRouter from './main.routes.js';
 
 const router = express.Router();
 

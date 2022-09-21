@@ -1,12 +1,12 @@
-"use strict";
+'use strict';
 
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 import {
   APP_NAME,
   APP_PORT,
   MONGO_CONNECTION,
-} from "./app/config/global.config.js";
-import app from "./app/app.js";
+} from './app/config/global.config.js';
+import app from './app/app.js';
 
 async function main() {
   await mongoose.connect(`${MONGO_CONNECTION}${APP_NAME}`);
