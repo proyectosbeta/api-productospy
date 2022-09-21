@@ -10,3 +10,4 @@
 - [refactor] Refactoring code routes.
 - [feat] Add eslint and prettier.
 - [feat] Add swagger (documentation API).
+- [docs] Update readme file.
