@@ -9,3 +9,4 @@
 - [feat] Add translation (german, english and spanish).
 - [refactor] Refactoring code routes.
 - [feat] Add eslint and prettier.
+- [feat] Add swagger (documentation API).
